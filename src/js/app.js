@@ -123,14 +123,17 @@ window.printProducts = () => {
         const productsTotal = Object.keys(listCategorias[id]);
         productsTotal.forEach(elem => {
         const itemProducts = listCategorias[id][elem];
-        showProducts.innerHTML += `
-      <div class="row" id=${id}>
-      <div class="col s12 l4">
-      <div class="card">
-        <div class="card-image">
-          <img src="${itemProducts.imagen}">
-        </div>
-        <div class="card-content">
+        showProducts.innerHTML +=
+        
+        `
+      <div class="container">
+       <div class="row" id=${id}>
+        <div class="col m6 s6 l6">
+          <div class="card">
+           <div class="card-image">
+             <img src="${itemProducts.imagen}">
+           </div>
+          <div class="card-content">
           <a class="modal-trigger" href="#modal1">
             <span class="card-title center-align">${itemProducts.producto}</span>
           </a>
