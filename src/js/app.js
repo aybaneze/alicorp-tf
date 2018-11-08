@@ -128,16 +128,16 @@ window.printProducts = () => {
         `
       <div class="container">
        <div class="row" id=${id}>
-        <div class="col m6 s6 l6">
-          <div class="card">
+        <div class="col m12 s12 l12">
+          <div class="card" style="width:80%; height:60%;padding: 0;">
            <div class="card-image">
-             <img src="${itemProducts.imagen}">
+             <img src="${itemProducts.imagen}" style="width:250px; height:300px">
            </div>
-          <div class="card-content">
+          <div class="card-content" style="width:100%; height:50%; text-align:center;">
           <a class="modal-trigger" href="#modal1">
             <span class="card-title center-align">${itemProducts.producto}</span>
           </a>
-          <p class="center-align">${itemProducts.marca}</p>
+          <p class="center-align" >${itemProducts.marca}</p>
           <br>
           <p class="center-align">Precio: S/. ${itemProducts.precio}</p>
         </div>
@@ -150,7 +150,7 @@ window.printProducts = () => {
         </div>
       </div>
     </div>
-  </div>
+ 
 
   <!-- Modal Structure -->
   <div id="modal1" class="modal">
